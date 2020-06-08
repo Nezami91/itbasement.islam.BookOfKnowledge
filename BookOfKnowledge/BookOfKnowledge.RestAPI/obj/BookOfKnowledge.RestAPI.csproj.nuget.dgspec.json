@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.RestAPI.csproj": {}
+    "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.RestAPI\\BookOfKnowledge.RestAPI.csproj": {}
   },
   "projects": {
     "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.DataAccess\\BookOfKnowledge.DataAccess.csproj": {
@@ -35,37 +35,14 @@
         "net472": {}
       }
     },
-    "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Service\\BookOfKnowledge.Service.csproj": {
+    "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.RestAPI\\BookOfKnowledge.RestAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Service\\BookOfKnowledge.Service.csproj",
-        "projectName": "BookOfKnowledge.Service",
-        "projectPath": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Service\\BookOfKnowledge.Service.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {
-              "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.DataAccess\\BookOfKnowledge.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.DataAccess\\BookOfKnowledge.DataAccess.csproj"
-              },
-              "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Models\\BookOfKnowledge.Models.csproj": {
-                "projectPath": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Models\\BookOfKnowledge.Models.csproj"
-              }
-            }
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
-    "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.RestAPI.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.RestAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.RestAPI\\BookOfKnowledge.RestAPI.csproj",
         "projectName": "BookOfKnowledge.RestAPI",
-        "projectPath": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.RestAPI.csproj",
+        "projectPath": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.RestAPI\\BookOfKnowledge.RestAPI.csproj",
         "packagesPath": "C:\\Users\\Jala.Nezami\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge\\obj\\",
+        "outputPath": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.RestAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -129,6 +106,29 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Service\\BookOfKnowledge.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Service\\BookOfKnowledge.Service.csproj",
+        "projectName": "BookOfKnowledge.Service",
+        "projectPath": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Service\\BookOfKnowledge.Service.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.DataAccess\\BookOfKnowledge.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.DataAccess\\BookOfKnowledge.DataAccess.csproj"
+              },
+              "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Models\\BookOfKnowledge.Models.csproj": {
+                "projectPath": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Models\\BookOfKnowledge.Models.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
       }
     }
   }

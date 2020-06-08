@@ -6129,11 +6129,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.RestAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.RestAPI\\BookOfKnowledge.RestAPI.csproj",
       "projectName": "BookOfKnowledge.RestAPI",
-      "projectPath": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.RestAPI.csproj",
+      "projectPath": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.RestAPI\\BookOfKnowledge.RestAPI.csproj",
       "packagesPath": "C:\\Users\\Jala.Nezami\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge\\obj\\",
+      "outputPath": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.RestAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
