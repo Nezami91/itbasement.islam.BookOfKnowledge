@@ -6129,9 +6129,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.csproj",
-      "projectName": "BookOfKnowledge",
-      "projectPath": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.csproj",
+      "projectUniqueName": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.RestAPI.csproj",
+      "projectName": "BookOfKnowledge.RestAPI",
+      "projectPath": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.RestAPI.csproj",
       "packagesPath": "C:\\Users\\Jala.Nezami\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Jala.Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge\\obj\\",
       "projectStyle": "PackageReference",
