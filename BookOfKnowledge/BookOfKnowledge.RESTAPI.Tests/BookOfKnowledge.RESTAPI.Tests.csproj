@@ -108,12 +108,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BookOfKnowledge.RESTAPI\BookOfKnowledge.RESTAPI.csproj">
-      <Project>{5E42FCC5-E60E-4D67-BAF9-B1F1B1A02746}</Project>
-      <Name>BookOfKnowledge.RESTAPI</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -1,0 +1,6 @@
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\bin\Debug\BookOfKnowledge.Service.dll.config
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\bin\Debug\BookOfKnowledge.Service.dll
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\bin\Debug\BookOfKnowledge.Service.pdb
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\obj\Debug\BookOfKnowledge.Service.csprojAssemblyReference.cache
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\obj\Debug\BookOfKnowledge.Service.dll
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\obj\Debug\BookOfKnowledge.Service.pdb
