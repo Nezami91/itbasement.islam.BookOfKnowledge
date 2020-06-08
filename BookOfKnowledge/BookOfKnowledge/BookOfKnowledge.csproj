@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BookOfKnowledge.Models\BookOfKnowledge.Models.csproj" />
     <ProjectReference Include="..\BookOfKnowledge.Service\BookOfKnowledge.Service.csproj" />
   </ItemGroup>
 

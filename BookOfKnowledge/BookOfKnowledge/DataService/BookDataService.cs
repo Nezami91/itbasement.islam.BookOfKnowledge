@@ -14,7 +14,7 @@ namespace BookOfKnowledge.DataService
             _bookService = new Service.Book.BookService();
         }
 
-        public List<string> ListBooks()
+        public List<Models.Book.Book> ListBooks()
         {
             var listOfBooks = _bookService.ListBooks();
 

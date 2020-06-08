@@ -16,7 +16,7 @@ namespace BookOfKnowledge.Service.Book
             _bookRepository = new BookOfKnowledge.DataAccess.Repository.BookRepository();
         }
 
-        public List<string> ListBooks()
+        public List<Models.Book.Book> ListBooks()
         {
 
             return _bookRepository.ListBooks();

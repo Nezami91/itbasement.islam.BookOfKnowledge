@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookOfKnowledge.Service", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookOfKnowledge.DataAccess", "BookOfKnowledge.DataAccess\BookOfKnowledge.DataAccess.csproj", "{628DA52B-DEB9-489D-BA99-5E5E37E3E445}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookOfKnowledge.Models", "BookOfKnowledge.Models\BookOfKnowledge.Models.csproj", "{2D4CB0F3-3176-424A-901F-38BDD8BD0C3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{628DA52B-DEB9-489D-BA99-5E5E37E3E445}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{628DA52B-DEB9-489D-BA99-5E5E37E3E445}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{628DA52B-DEB9-489D-BA99-5E5E37E3E445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D4CB0F3-3176-424A-901F-38BDD8BD0C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4CB0F3-3176-424A-901F-38BDD8BD0C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D4CB0F3-3176-424A-901F-38BDD8BD0C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4CB0F3-3176-424A-901F-38BDD8BD0C3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

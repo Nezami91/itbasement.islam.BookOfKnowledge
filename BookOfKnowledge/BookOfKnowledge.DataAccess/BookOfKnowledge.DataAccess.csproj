@@ -53,5 +53,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BookOfKnowledge.Models\BookOfKnowledge.Models.csproj">
+      <Project>{2d4cb0f3-3176-424a-901f-38bdd8bd0c3c}</Project>
+      <Name>BookOfKnowledge.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

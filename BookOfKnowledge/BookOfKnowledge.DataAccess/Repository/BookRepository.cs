@@ -9,15 +9,30 @@ namespace BookOfKnowledge.DataAccess.Repository
     public class BookRepository
     {
 
-
-        public List<string> ListBooks()
+        public List<BookOfKnowledge.Models.Book.Book> ListBooks()
         {
-            var listOfBooks = new List<string>();
+            var listOfBooks = new List<BookOfKnowledge.Models.Book.Book>();
+
+            var bookOne = new BookOfKnowledge.Models.Book.Book();
+            bookOne.Id = 1;
+            bookOne.Title = "Book Of Salah";
+            bookOne.Description = " Salhaa...";
+            bookOne.Progress = 77;
 
 
-            listOfBooks.Add("Book Of Salah");
-            listOfBooks.Add("Book Of Imaan");
-            listOfBooks.Add("Book Of ISlam");
+
+            listOfBooks.Add(bookOne);
+
+            var bookTwo = new BookOfKnowledge.Models.Book.Book() {
+                Id = 1,
+                Title = "Book Of Salah",
+                Description = " Salhaa...",
+                Progress = 77,
+            };
+
+
+            listOfBooks.Add(bookTwo);
+       
 
             return listOfBooks;
 

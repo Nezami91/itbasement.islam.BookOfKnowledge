@@ -13,7 +13,7 @@ namespace BookOfKnowledge.Controllers
     {
         // GET: api/Book
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Models.Book.Book> Get()
         {
             //var listOfBooks = new BookOfKnowledge.DataService.BookDataService().ListBooks();
 

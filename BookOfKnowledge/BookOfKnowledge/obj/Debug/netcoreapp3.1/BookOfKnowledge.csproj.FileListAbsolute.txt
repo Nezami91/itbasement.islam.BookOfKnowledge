@@ -93,3 +93,9 @@ C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKno
 C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge\bin\Debug\netcoreapp3.1\BookOfKnowledge.Service.dll
 C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge\bin\Debug\netcoreapp3.1\BookOfKnowledge.Service.pdb
 C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge\bin\Debug\netcoreapp3.1\BookOfKnowledge.Service.dll.config
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge\bin\Debug\netcoreapp3.1\BookOfKnowledge.DataAccess.dll
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge\bin\Debug\netcoreapp3.1\BookOfKnowledge.Models.exe
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge\bin\Debug\netcoreapp3.1\BookOfKnowledge.Models.pdb
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge\bin\Debug\netcoreapp3.1\BookOfKnowledge.Models.exe.config
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge\bin\Debug\netcoreapp3.1\BookOfKnowledge.DataAccess.pdb
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge\bin\Debug\netcoreapp3.1\BookOfKnowledge.DataAccess.dll.config

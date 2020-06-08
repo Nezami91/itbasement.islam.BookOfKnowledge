@@ -4,3 +4,10 @@ C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKno
 C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\obj\Debug\BookOfKnowledge.Service.csprojAssemblyReference.cache
 C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\obj\Debug\BookOfKnowledge.Service.dll
 C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\obj\Debug\BookOfKnowledge.Service.pdb
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\bin\Debug\BookOfKnowledge.DataAccess.dll
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\bin\Debug\BookOfKnowledge.Models.exe
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\bin\Debug\BookOfKnowledge.DataAccess.pdb
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\bin\Debug\BookOfKnowledge.DataAccess.dll.config
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\bin\Debug\BookOfKnowledge.Models.pdb
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\bin\Debug\BookOfKnowledge.Models.exe.config
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\obj\Debug\BookOfKnowledge.Service.csproj.CopyComplete
