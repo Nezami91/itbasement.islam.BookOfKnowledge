@@ -1,40 +1,80 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Dapper;
 
 namespace BookOfKnowledge.DataAccess.Repository
 {
     public class BookRepository
     {
 
+
+
+
+        private string _labsysConnectionString = "Data Source=EUHMBWS020;Initial Catalog=BookOfKnowledge;Integrated Security=false;User Id = sa; Password = milanax11";
+
+
         public List<BookOfKnowledge.Models.Book.Book> ListBooks()
         {
-            var listOfBooks = new List<BookOfKnowledge.Models.Book.Book>();
-
-            var bookOne = new BookOfKnowledge.Models.Book.Book();
-            bookOne.Id = 1;
-            bookOne.Title = "Book Of Salah";
-            bookOne.Description = " Salhaa...";
-            bookOne.Progress = 77;
 
 
-
-            listOfBooks.Add(bookOne);
-
-            var bookTwo = new BookOfKnowledge.Models.Book.Book() {
-                Id = 1,
-                Title = "Book Of Salah",
-                Description = " Salhaa...",
-                Progress = 77,
-            };
+            try
+            {
+                string query = @"SELECT  Id, Name AS Title , Description FROM[BookOfKnowledge].[dbo].[Book]";
 
 
-            listOfBooks.Add(bookTwo);
+                using (var _connection = new SqlConnection(_labsysConnectionString))
+                {
+
+
+                    var listOfBooksFromDatabase = _connection.Query<Models.Book.Book>(query, CommandType.Text).ToList();
+
+
+                    string test = "test";
+
+
+                }
+
+
+
+
+                var listOfBooks = new List<BookOfKnowledge.Models.Book.Book>();
+
+                var bookOne = new BookOfKnowledge.Models.Book.Book();
+                bookOne.Id = 1;
+                bookOne.Title = "Book Of Salah";
+                bookOne.Description = " Salhaa...";
+                bookOne.Progress = 77;
+
+
+
+                listOfBooks.Add(bookOne);
+
+                var bookTwo = new BookOfKnowledge.Models.Book.Book()
+                {
+                    Id = 1,
+                    Title = "Book Of Salah",
+                    Description = " Salhaa...",
+                    Progress = 77,
+                };
+
+
+                listOfBooks.Add(bookTwo);
+            }
+            catch (Exception ex)
+            {
+
+                string test = "wsegegeg";
+            }
+
+    
        
 
-            return listOfBooks;
+            return null;
 
         }
 

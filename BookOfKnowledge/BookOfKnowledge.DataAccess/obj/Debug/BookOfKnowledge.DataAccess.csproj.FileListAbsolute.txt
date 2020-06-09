@@ -8,3 +8,9 @@ C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKno
 C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.DataAccess\obj\Debug\BookOfKnowledge.DataAccess.csproj.CopyComplete
 C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.DataAccess\obj\Debug\BookOfKnowledge.DataAccess.dll
 C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.DataAccess\obj\Debug\BookOfKnowledge.DataAccess.pdb
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.DataAccess\bin\Debug\Dapper.Contrib.dll
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.DataAccess\bin\Debug\Dapper.dll
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.DataAccess\bin\Debug\Dapper.xml
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.DataAccess\bin\Debug\Dapper.Contrib.xml
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.DataAccess\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.DataAccess\bin\Debug\System.Data.SqlClient.xml

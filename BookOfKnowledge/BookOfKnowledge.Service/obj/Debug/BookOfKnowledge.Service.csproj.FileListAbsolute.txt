@@ -11,3 +11,7 @@ C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKno
 C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\bin\Debug\BookOfKnowledge.Models.pdb
 C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\bin\Debug\BookOfKnowledge.Models.exe.config
 C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\obj\Debug\BookOfKnowledge.Service.csproj.CopyComplete
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\bin\Debug\Dapper.dll
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\bin\Debug\Dapper.xml
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Service\bin\Debug\System.Data.SqlClient.xml
