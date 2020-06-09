@@ -22,19 +22,23 @@ namespace BookOfKnowledge.DataAccess.Repository
         {
 
 
-            try
-            {
-                string query = @"SELECT  Id, Name AS Title , Description FROM[BookOfKnowledge].[dbo].[Book]";
+            //try
+            //{
+            string sqlStoredProcedure = @"BookOfKnowledge.dbo.Book_list";
 
 
-                using (var _connection = new SqlConnection(_labsysConnectionString))
+            using (var _connection = new SqlConnection(_labsysConnectionString))
                 {
 
 
-                    var listOfBooksFromDatabase = _connection.Query<Models.Book.Book>(query, CommandType.Text).ToList();
+                    var listOfBooksFromDatabase = _connection.Query<Models.Book.Book>(sqlStoredProcedure, CommandType.StoredProcedure).ToList();
 
 
-                    string test = "test";
+                    if (listOfBooksFromDatabase.Any())
+                    {
+
+                        return listOfBooksFromDatabase;
+                    }
 
 
                 }
@@ -42,39 +46,39 @@ namespace BookOfKnowledge.DataAccess.Repository
 
 
 
-                var listOfBooks = new List<BookOfKnowledge.Models.Book.Book>();
+            //    var listOfBooks = new List<BookOfKnowledge.Models.Book.Book>();
 
-                var bookOne = new BookOfKnowledge.Models.Book.Book();
-                bookOne.Id = 1;
-                bookOne.Title = "Book Of Salah";
-                bookOne.Description = " Salhaa...";
-                bookOne.Progress = 77;
-
-
-
-                listOfBooks.Add(bookOne);
-
-                var bookTwo = new BookOfKnowledge.Models.Book.Book()
-                {
-                    Id = 1,
-                    Title = "Book Of Salah",
-                    Description = " Salhaa...",
-                    Progress = 77,
-                };
+            //    var bookOne = new BookOfKnowledge.Models.Book.Book();
+            //    bookOne.Id = 1;
+            //    bookOne.Title = "Book Of Salah";
+            //    bookOne.Description = " Salhaa...";
+            //    bookOne.Progress = 77;
 
 
-                listOfBooks.Add(bookTwo);
-            }
-            catch (Exception ex)
-            {
 
-                string test = "wsegegeg";
-            }
+            //    listOfBooks.Add(bookOne);
 
-    
-       
+            //    var bookTwo = new BookOfKnowledge.Models.Book.Book()
+            //    {
+            //        Id = 1,
+            //        Title = "Book Of Salah",
+            //        Description = " Salhaa...",
+            //        Progress = 77,
+            //    };
 
-            return null;
+
+            //    listOfBooks.Add(bookTwo);
+            //}
+            //catch (Exception ex)
+            //{
+
+            //    string test = "wsegegeg";
+            //}
+
+
+
+
+            return new List<Models.Book.Book>(); ;
 
         }
 
