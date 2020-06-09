@@ -15,7 +15,7 @@ namespace BookOfKnowledge.DataAccess.Repository
 
 
 
-        private string _labsysConnectionString = "Data Source=EUHMBWS020;Initial Catalog=BookOfKnowledge;Integrated Security=false;User Id = sa; Password = milanax11";
+        private string _labsysConnectionString = "Data Source=EUHMBWS009;Initial Catalog=BookOfKnowledge;Integrated Security=false;User Id = sa; Password = milanax11";
 
 
         public List<BookOfKnowledge.Models.Book.Book> ListBooks()
