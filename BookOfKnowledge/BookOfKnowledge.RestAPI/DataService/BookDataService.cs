@@ -19,7 +19,6 @@ namespace BookOfKnowledge.DataService
             var listOfBooks = _bookService.ListBooks();
 
             return listOfBooks;
-
         }
 
         public string FindBookById(int bookReferenceId)

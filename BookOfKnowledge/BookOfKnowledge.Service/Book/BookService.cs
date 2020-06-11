@@ -18,17 +18,11 @@ namespace BookOfKnowledge.Service.Book
 
         public List<Models.Book.Book> ListBooks()
         {
-
-
-
-
             return _bookRepository.ListBooks();
         }
 
-
         public string FindBookById(int bookReferenceId)
         {
-
             return _bookRepository.FindBookById(bookReferenceId);
         }
 

@@ -1,6 +1,7 @@
-C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Models\bin\Debug\BookOfKnowledge.Models.exe.config
-C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Models\bin\Debug\BookOfKnowledge.Models.exe
-C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Models\bin\Debug\BookOfKnowledge.Models.pdb
-C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Models\obj\Debug\BookOfKnowledge.Models.csprojAssemblyReference.cache
-C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Models\obj\Debug\BookOfKnowledge.Models.exe
-C:\Users\Jala.Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Models\obj\Debug\BookOfKnowledge.Models.pdb
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Models\bin\Debug\BookOfKnowledge.Models.exe.config
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Models\bin\Debug\BookOfKnowledge.Models.exe
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Models\bin\Debug\BookOfKnowledge.Models.pdb
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Models\obj\Debug\BookOfKnowledge.Models.exe
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Models\obj\Debug\BookOfKnowledge.Models.pdb
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Models\obj\Debug\BookOfKnowledge.Models.csprojAssemblyReference.cache
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Models\obj\Debug\BookOfKnowledge.Models.csproj.CoreCompileInputs.cache

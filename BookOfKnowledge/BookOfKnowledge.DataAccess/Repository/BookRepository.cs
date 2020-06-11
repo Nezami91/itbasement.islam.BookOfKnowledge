@@ -5,46 +5,29 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Dapper;
+//using Dapper;
+//using DapperExtensions;
 
 namespace BookOfKnowledge.DataAccess.Repository
 {
     public class BookRepository
     {
-
-
-
-
         private string _labsysConnectionString = "Data Source=EUHMBWS009;Initial Catalog=BookOfKnowledge;Integrated Security=false;User Id = sa; Password = milanax11";
-
 
         public List<BookOfKnowledge.Models.Book.Book> ListBooks()
         {
-
-
-            //try
-            //{
             string sqlStoredProcedure = @"BookOfKnowledge.dbo.Book_list";
 
+            //using (var _connection = new SqlConnection(_labsysConnectionString))
+            //{
+            //    var listOfBooksFromDatabase =
+            //        _connection.Query<Models.Book.Book>(sqlStoredProcedure, CommandType.StoredProcedure).ToList();
 
-            using (var _connection = new SqlConnection(_labsysConnectionString))
-                {
-
-
-                    var listOfBooksFromDatabase = _connection.Query<Models.Book.Book>(sqlStoredProcedure, CommandType.StoredProcedure).ToList();
-
-
-                    if (listOfBooksFromDatabase.Any())
-                    {
-
-                        return listOfBooksFromDatabase;
-                    }
-
-
-                }
-
-
-
+            //    if (listOfBooksFromDatabase.Any())
+            //    {
+            //        return listOfBooksFromDatabase;
+            //    }
+            //}
 
             //    var listOfBooks = new List<BookOfKnowledge.Models.Book.Book>();
 
@@ -53,8 +36,6 @@ namespace BookOfKnowledge.DataAccess.Repository
             //    bookOne.Title = "Book Of Salah";
             //    bookOne.Description = " Salhaa...";
             //    bookOne.Progress = 77;
-
-
 
             //    listOfBooks.Add(bookOne);
 
@@ -74,28 +55,22 @@ namespace BookOfKnowledge.DataAccess.Repository
 
             //    string test = "wsegegeg";
             //}
-
-
-
-
             return new List<Models.Book.Book>(); ;
-
         }
-
 
         public string FindBookById(int bookReferenceId)
         {
+            // var listOfBooks = ListBooks(); 
+            //var bookFound = listOfBooks.Where(s => s.Id == bookReferenceId);
+            // return bookFound.Title
+
             var listOfBooks = new List<string>();
-
-
             listOfBooks.Add("Book Of Salah");
             listOfBooks.Add("Book Of Imaan");
             listOfBooks.Add("Book Of ISlam");
 
             var bookFound = listOfBooks.Where(s => s.Contains("Book Of Salah")).FirstOrDefault();
-
             return bookFound;
-
         }
 
 

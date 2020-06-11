@@ -5,37 +5,33 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BookOfKnowledge.Controllers
+namespace BookOfKnowledge.RestAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BookController : ControllerBase
+    public class ChapterController : ControllerBase
     {
-        // GET: api/Book
+        // GET: api/Chapter
         [HttpGet]
-        public IEnumerable<Models.Book.Book> Get()
+        public IEnumerable<string> Get()
         {
-            //var listOfBooks = new BookOfKnowledge.DataService.BookDataService().ListBooks();
-
-            //return listOfBooks;
-
-           return  new BookOfKnowledge.DataService.BookDataService().ListBooks();
+            return new BookOfKnowledge.RestAPI.DataService.ChapterDataService().ListChapters();        
         }
 
-        // GET: api/Book/5
-        [HttpGet("{id}", Name = "GetBook")]
+        // GET: api/Chapter/5
+        [HttpGet("{id}", Name = "GetChapter")]
         public string Get(int id)
         {
-            return new BookOfKnowledge.DataService.BookDataService().FindBookById(id);
+            return new BookOfKnowledge.RestAPI.DataService.ChapterDataService().FindChapterById(id);
         }
 
-        // POST: api/Book
+        // POST: api/Chapter
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT: api/Book/5
+        // PUT: api/Chapter/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
