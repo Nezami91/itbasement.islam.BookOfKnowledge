@@ -1,6 +1,8 @@
-﻿using System;
+﻿using BookOfKnowledge.Models.Book;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 
 namespace BookOfKnowledge.DataService
@@ -16,18 +18,26 @@ namespace BookOfKnowledge.DataService
 
         public List<Models.Book.Book> ListBooks()
         {
-            var listOfBooks = _bookService.ListBooks();
-
-            return listOfBooks;
+            return _bookService.ListBooks();     
         }
 
-        public string FindBookById(int bookReferenceId)
+        public Models.Book.Book FindBookById(int bookReferenceId)
         {
-            var listOfBooks = _bookService.FindBookById(bookReferenceId);
-
-            return listOfBooks;
-
+            return _bookService.FindBookById(bookReferenceId);
         }
 
+        public Models.Book.Book DeleteBook(int id)
+        {
+            return _bookService.DeleteBook(id);           
+        }
+
+        public Models.Book.Book CreateBook(Models.Book.Book book)
+        {
+            return _bookService.CreateBook(book);
+        }
+        public Models.Book.Book UpdateBook(Models.Book.Book book)
+        {
+            return _bookService.UpdateBook(book);
+        }
     }
 }

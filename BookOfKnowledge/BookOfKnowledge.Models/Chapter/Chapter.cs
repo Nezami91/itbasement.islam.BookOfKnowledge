@@ -12,8 +12,7 @@ namespace BookOfKnowledge.Models.Chapter
         public string Title { get; set; }
         public string Description { get; set; }
         public int Progress { get; set; }
-       
+        public int? BookReferenceId { get; set; }
 
-        
     }
 }

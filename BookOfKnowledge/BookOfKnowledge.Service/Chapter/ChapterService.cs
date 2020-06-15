@@ -9,8 +9,7 @@ namespace BookOfKnowledge.Service.Chapter
     public class ChapterService
     {
         private readonly BookOfKnowledge.DataAccess.Repository.ChapterRepository _chapterRepository;
-
-        
+     
         public ChapterService()
         {
             _chapterRepository = new BookOfKnowledge.DataAccess.Repository.ChapterRepository();

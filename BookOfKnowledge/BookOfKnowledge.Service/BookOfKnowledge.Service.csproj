@@ -56,6 +56,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Debug\BookOfKnowledge.DataAccess.dll.config" />
+    <None Include="bin\Debug\BookOfKnowledge.Models.exe.config" />
+    <None Include="bin\Debug\BookOfKnowledge.Service.dll.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -67,6 +70,16 @@
       <Project>{2d4cb0f3-3176-424a-901f-38bdd8bd0c3c}</Project>
       <Name>BookOfKnowledge.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\BookOfKnowledge.DataAccess.dll" />
+    <Content Include="bin\Debug\BookOfKnowledge.DataAccess.pdb" />
+    <Content Include="bin\Debug\BookOfKnowledge.Models.exe" />
+    <Content Include="bin\Debug\BookOfKnowledge.Models.pdb" />
+    <Content Include="bin\Debug\BookOfKnowledge.Service.dll" />
+    <Content Include="bin\Debug\BookOfKnowledge.Service.pdb" />
+    <Content Include="bin\Debug\Dapper.xml" />
+    <Content Include="bin\Debug\System.Data.SqlClient.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

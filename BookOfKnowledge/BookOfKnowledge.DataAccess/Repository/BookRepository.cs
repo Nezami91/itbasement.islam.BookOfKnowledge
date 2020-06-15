@@ -5,8 +5,8 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//using Dapper;
-//using DapperExtensions;
+using Dapper;
+using DapperExtensions;
 
 namespace BookOfKnowledge.DataAccess.Repository
 {
@@ -16,63 +16,71 @@ namespace BookOfKnowledge.DataAccess.Repository
 
         public List<BookOfKnowledge.Models.Book.Book> ListBooks()
         {
-            string sqlStoredProcedure = @"BookOfKnowledge.dbo.Book_list";
+            string sqlStoredProcedure = @"BookOfKnowledge.dbo.Book_List";
 
-            //using (var _connection = new SqlConnection(_labsysConnectionString))
-            //{
-            //    var listOfBooksFromDatabase =
-            //        _connection.Query<Models.Book.Book>(sqlStoredProcedure, CommandType.StoredProcedure).ToList();
+            using (var _connection = new SqlConnection(_labsysConnectionString))
+            {
+                var listOfBooksFromDatabase =
+                    _connection.Query<Models.Book.Book>(sqlStoredProcedure, CommandType.StoredProcedure).ToList();
 
-            //    if (listOfBooksFromDatabase.Any())
-            //    {
-            //        return listOfBooksFromDatabase;
-            //    }
-            //}
+                if (listOfBooksFromDatabase.Any())
+                {
+                    return listOfBooksFromDatabase;
+                }
 
-            //    var listOfBooks = new List<BookOfKnowledge.Models.Book.Book>();
+                
+            }
+          
+            throw new InvalidExpressionException("Nothing from the data base");
 
-            //    var bookOne = new BookOfKnowledge.Models.Book.Book();
-            //    bookOne.Id = 1;
-            //    bookOne.Title = "Book Of Salah";
-            //    bookOne.Description = " Salhaa...";
-            //    bookOne.Progress = 77;
-
-            //    listOfBooks.Add(bookOne);
-
-            //    var bookTwo = new BookOfKnowledge.Models.Book.Book()
-            //    {
-            //        Id = 1,
-            //        Title = "Book Of Salah",
-            //        Description = " Salhaa...",
-            //        Progress = 77,
-            //    };
-
-
-            //    listOfBooks.Add(bookTwo);
-            //}
-            //catch (Exception ex)
-            //{
-
-            //    string test = "wsegegeg";
-            //}
-            return new List<Models.Book.Book>(); ;
         }
 
-        public string FindBookById(int bookReferenceId)
+        public Models.Book.Book FindBookById(int bookReferenceId)
         {
-            // var listOfBooks = ListBooks(); 
-            //var bookFound = listOfBooks.Where(s => s.Id == bookReferenceId);
-            // return bookFound.Title
-
-            var listOfBooks = new List<string>();
-            listOfBooks.Add("Book Of Salah");
-            listOfBooks.Add("Book Of Imaan");
-            listOfBooks.Add("Book Of ISlam");
-
-            var bookFound = listOfBooks.Where(s => s.Contains("Book Of Salah")).FirstOrDefault();
-            return bookFound;
+            var listOfBooks = ListBooks();
+            
+            return listOfBooks.Find(s => s.Id == bookReferenceId);
         }
 
+        public Models.Book.Book DeleteBook(int id)
+        {
+           
+            var bookList = ListBooks();
+            var book = bookList.Find(x => x.Id == id); 
 
+            if (bookList.Find(x => x.Id == id) != null)
+            {
+                bookList.Remove(bookList.Find(x => x.Id == id));
+                return book;
+            }
+            else
+            {
+                Console.WriteLine("Object not Found");
+                return book;                    
+            }
+           
+        }
+
+        public Models.Book.Book CreateBook(Models.Book.Book book)
+        {
+            // tjeck if a book with the same Title and Description exist
+
+            var bookList = ListBooks();         
+            bookList.Add(book);
+
+            var newBookList = ListBooks();
+            return newBookList.LastOrDefault();
+        }
+
+        public Models.Book.Book UpdateBook(Models.Book.Book book)
+        {
+            // tjeck if a book with the same Title and Description exist
+
+            var bookList = ListBooks();
+            bookList.Add(book);
+
+            var newBookList = ListBooks();
+            return newBookList.LastOrDefault();
+        }
     }
 }

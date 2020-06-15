@@ -21,19 +21,23 @@ namespace BookOfKnowledge.Service.Book
             return _bookRepository.ListBooks();
         }
 
-        public string FindBookById(int bookReferenceId)
+        public Models.Book.Book FindBookById(int bookReferenceId)
         {
             return _bookRepository.FindBookById(bookReferenceId);
         }
 
+        public Models.Book.Book DeleteBook( int id)
+        {
+            return _bookRepository.DeleteBook(id);
+        }
 
-
-
-
-
-
-
-
-
+        public Models.Book.Book CreateBook(Models.Book.Book book)
+        {
+            return _bookRepository.CreateBook(book);
+        }
+        public Models.Book.Book UpdateBook(Models.Book.Book book)
+        {
+            return _bookRepository.UpdateBook(book);
+        }
     }
 }
