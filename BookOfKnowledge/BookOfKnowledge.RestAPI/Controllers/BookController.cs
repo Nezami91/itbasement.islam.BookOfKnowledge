@@ -69,7 +69,7 @@ namespace BookOfKnowledge.Controllers
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public Models.Book.Book Delete(int id)
+        public List<Models.Book.Book> Delete(int id)
         {
             return new BookOfKnowledge.DataService.BookDataService().DeleteBook(id);
         }

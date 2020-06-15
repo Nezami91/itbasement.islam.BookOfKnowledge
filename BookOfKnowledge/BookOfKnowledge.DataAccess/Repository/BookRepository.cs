@@ -26,39 +26,35 @@ namespace BookOfKnowledge.DataAccess.Repository
                 if (listOfBooksFromDatabase.Any())
                 {
                     return listOfBooksFromDatabase;
-                }
-
-                
-            }
-          
+                }       
+            }         
             throw new InvalidExpressionException("Nothing from the data base");
-
         }
 
         public Models.Book.Book FindBookById(int bookReferenceId)
         {
-            var listOfBooks = ListBooks();
-            
-            return listOfBooks.Find(s => s.Id == bookReferenceId);
+            string sqlStoredProcedure = @"BookOfKnowledge.dbo.Book_GetById";
+
+            using (var _connection = new SqlConnection(_labsysConnectionString))
+            {
+                var bookFromDatabase =
+                    _connection.Query<Models.Book.Book>(sqlStoredProcedure, new {Id = bookReferenceId},commandType: CommandType.StoredProcedure).ToList();
+                                                     
+                return bookFromDatabase.Find(x => x.Id == bookReferenceId);                          
+            }                              
         }
 
-        public Models.Book.Book DeleteBook(int id)
+        public List<Models.Book.Book> DeleteBook(int id)
         {
-           
-            var bookList = ListBooks();
-            var book = bookList.Find(x => x.Id == id); 
+           string sqlStoredProcedure = @"BookOfKnowledge.dbo.Book_Delete";
 
-            if (bookList.Find(x => x.Id == id) != null)
+            using (var _connection = new SqlConnection(_labsysConnectionString))
             {
-                bookList.Remove(bookList.Find(x => x.Id == id));
-                return book;
+                _connection.Query<Models.Book.Book>
+                    (sqlStoredProcedure, new { Id = id }, commandType: CommandType.StoredProcedure);
+               
+                return ListBooks();
             }
-            else
-            {
-                Console.WriteLine("Object not Found");
-                return book;                    
-            }
-           
         }
 
         public Models.Book.Book CreateBook(Models.Book.Book book)
