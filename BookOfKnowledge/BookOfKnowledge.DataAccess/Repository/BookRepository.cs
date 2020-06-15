@@ -37,10 +37,10 @@ namespace BookOfKnowledge.DataAccess.Repository
 
             using (var _connection = new SqlConnection(_labsysConnectionString))
             {
-                var bookFromDatabase =
+                var bookListFromDatabase =
                     _connection.Query<Models.Book.Book>(sqlStoredProcedure, new {Id = bookReferenceId},commandType: CommandType.StoredProcedure).ToList();
                                                      
-                return bookFromDatabase.Find(x => x.Id == bookReferenceId);                          
+                return bookListFromDatabase.Find(x => x.Id == bookReferenceId);                          
             }                              
         }
 
@@ -58,25 +58,37 @@ namespace BookOfKnowledge.DataAccess.Repository
         }
 
         public Models.Book.Book CreateBook(Models.Book.Book book)
-        {
-            // tjeck if a book with the same Title and Description exist
+        {          
+            string sqlStoredProcedure = @"BookOfKnowledge.dbo.Book_Create";
 
-            var bookList = ListBooks();         
-            bookList.Add(book);
+            using (var _connection = new SqlConnection(_labsysConnectionString))
+            {              
+                    _connection.Query<Models.Book.Book>(sqlStoredProcedure, 
+                        new { Title = book.Title, Description = book.Description}, commandType: CommandType.StoredProcedure);            
+            }
 
-            var newBookList = ListBooks();
-            return newBookList.LastOrDefault();
+            return ListBooks().Find(x => x.Id == book.Id);                
+            //return newBookList.LastOrDefault();
         }
 
         public Models.Book.Book UpdateBook(Models.Book.Book book)
-        {
-            // tjeck if a book with the same Title and Description exist
+        {        
+            string sqlStoredProcedure = @"BookOfKnowledge.dbo.Book_Update";
 
-            var bookList = ListBooks();
-            bookList.Add(book);
-
-            var newBookList = ListBooks();
-            return newBookList.LastOrDefault();
+            var updateBook = FindBookById(book.Id);
+            if (updateBook != null)
+            {               
+                using (var _connection = new SqlConnection(_labsysConnectionString))
+                {
+                    _connection.Query<Models.Book.Book>(sqlStoredProcedure,
+                        new { Title = book.Title, Description = book.Description }, commandType: CommandType.StoredProcedure);
+                }
+                return ListBooks().Find(x => x.Id == book.Id);             
+            }
+            else
+            {
+                throw new InvalidExpressionException("No Book with Id = "+ book.Id);
+            }
         }
     }
 }

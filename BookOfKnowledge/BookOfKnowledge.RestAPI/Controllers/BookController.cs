@@ -28,43 +28,31 @@ namespace BookOfKnowledge.Controllers
         // POST: api/Book
         [HttpPost]
         public Models.Book.Book Post([FromBody] Models.Book.Book book) // create a book
-        {
-            //int Id = 1;
-            //Console.WriteLine("Title: ");
-            //var bookTitle = Console.ReadLine();
-
-            //Console.WriteLine("Description: ");
-            //var bookDescription = Console.ReadLine();
-
-            //var newBook = new Models.Book.Book()
-            //{
-            //    Id = book.Id,
-            //    Title = book.Title,
-            //    Description = book.Description,
-            //    Progress = book.Progress
-
-            //};
+        {         
             return new BookOfKnowledge.DataService.BookDataService().CreateBook(book);  
         }
 
         // PUT: api/Book/5
         [HttpPut("{id}")]
-        public Models.Book.Book Put(int id, [FromBody] string value) // Update a book
+        public Models.Book.Book Put([FromBody] Models.Book.Book book) // Update a book
         {
-            var book = GetBook(id);
-            if (book != null)
-            {
-                Console.WriteLine("Add New Title: ");
-                book.Title = Console.ReadLine();
-                Console.WriteLine("Add New Description");
-                book.Description = Console.ReadLine();
 
-                return new BookOfKnowledge.DataService.BookDataService().UpdateBook(book);
-            }
-            else
-            {
-                throw new System.InvalidOperationException("Book was not Found");
-            }
+            return new BookOfKnowledge.DataService.BookDataService().UpdateBook(book);
+
+            //var updateBook = GetBook(book.Id);
+            //if (updateBook != null)
+            //{
+            //    Console.WriteLine("Add New Title: ");
+            //    book.Title = Console.ReadLine();
+            //    Console.WriteLine("Add New Description");
+            //    book.Description = Console.ReadLine();
+
+            //    return new BookOfKnowledge.DataService.BookDataService().UpdateBook(book);
+            //}
+            //else
+            //{
+            //    throw new System.InvalidOperationException("Book was not Found");
+            //}
         }
 
         // DELETE: api/ApiWithActions/5
