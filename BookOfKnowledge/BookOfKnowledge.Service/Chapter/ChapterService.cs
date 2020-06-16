@@ -15,14 +15,28 @@ namespace BookOfKnowledge.Service.Chapter
             _chapterRepository = new BookOfKnowledge.DataAccess.Repository.ChapterRepository();
         }
 
-        public List<string> ListChapters()
+        public List<Models.Chapter.Chapter> ListChapters()
         {          
             return _chapterRepository.ListChapters();
         }
-        public string FindChapterById(int chapterReferenceId)
+        public Models.Chapter.Chapter FindChapterById(int chapterReferenceId)
         {
             return _chapterRepository.FindChapterById(chapterReferenceId);
         }
 
+        public Models.Chapter.Chapter CreateChapter(Models.Chapter.Chapter chapter)
+        {
+            return _chapterRepository.CreateChapter(chapter);
+        }
+
+        public Models.Chapter.Chapter UpdateChapter(int id, Models.Chapter.Chapter chapter)
+        {
+            return _chapterRepository.UpdateChapter(id, chapter);
+        }
+
+        public Models.Chapter.Chapter DeleteChapter(int id)
+        {
+            return _chapterRepository.DeleteChapter(id);
+        }
     }
 }

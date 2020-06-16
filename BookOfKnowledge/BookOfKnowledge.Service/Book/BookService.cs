@@ -26,7 +26,7 @@ namespace BookOfKnowledge.Service.Book
             return _bookRepository.FindBookById(bookReferenceId);
         }
 
-        public List<Models.Book.Book> DeleteBook( int id)
+        public Models.Book.Book DeleteBook( int id)
         {
             return _bookRepository.DeleteBook(id);
         }

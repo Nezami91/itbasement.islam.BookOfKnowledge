@@ -13,34 +13,37 @@ namespace BookOfKnowledge.RestAPI.Controllers
     {
         // GET: api/Chapter
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Models.Chapter.Chapter> Get()
         {
             return new BookOfKnowledge.RestAPI.DataService.ChapterDataService().ListChapters();        
         }
 
         // GET: api/Chapter/5
         [HttpGet("{id}", Name = "GetChapter")]
-        public string Get(int id)
+        public Models.Chapter.Chapter Get(int id)
         {
             return new BookOfKnowledge.RestAPI.DataService.ChapterDataService().FindChapterById(id);
         }
 
         // POST: api/Chapter
         [HttpPost]
-        public void Post([FromBody] string value)
+        public Models.Chapter.Chapter Post([FromBody] Models.Chapter.Chapter chapter)
         {
+            return new BookOfKnowledge.RestAPI.DataService.ChapterDataService().CreateChapter(chapter);
         }
 
         // PUT: api/Chapter/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public Models.Chapter.Chapter Put(int id, [FromBody] Models.Chapter.Chapter chapter)
         {
+            return new BookOfKnowledge.RestAPI.DataService.ChapterDataService().UpdateChapter(id, chapter);
         }
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public Models.Chapter.Chapter Delete(int id)
         {
+            return new BookOfKnowledge.RestAPI.DataService.ChapterDataService().DeleteChapter(id);
         }
     }
 }

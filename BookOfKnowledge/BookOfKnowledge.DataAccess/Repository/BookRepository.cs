@@ -42,20 +42,7 @@ namespace BookOfKnowledge.DataAccess.Repository
                                                      
                 return bookListFromDatabase.Find(x => x.Id == bookReferenceId);                          
             }                              
-        }
-
-        public List<Models.Book.Book> DeleteBook(int id)
-        {
-           string sqlStoredProcedure = @"BookOfKnowledge.dbo.Book_Delete";
-
-            using (var _connection = new SqlConnection(_labsysConnectionString))
-            {
-                _connection.Query<Models.Book.Book>
-                    (sqlStoredProcedure, new { Id = id }, commandType: CommandType.StoredProcedure);
-               
-                return ListBooks();
-            }
-        }
+        }    
 
         public Models.Book.Book CreateBook(Models.Book.Book book)
         {          
@@ -89,6 +76,20 @@ namespace BookOfKnowledge.DataAccess.Repository
             else
             {
                 throw new InvalidExpressionException("No Book with Id = "+ book.Id+" was Found");
+            }
+        }
+
+        public Models.Book.Book DeleteBook(int id)
+        {
+            string sqlStoredProcedure = @"BookOfKnowledge.dbo.Book_Delete";
+
+            using (var _connection = new SqlConnection(_labsysConnectionString))
+            {
+                var bookDeleted = FindBookById(id);
+                _connection.Query<Models.Book.Book>
+                    (sqlStoredProcedure, new { Id = id }, commandType: CommandType.StoredProcedure);
+
+                return bookDeleted;
             }
         }
     }
