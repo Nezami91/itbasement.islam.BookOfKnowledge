@@ -34,25 +34,10 @@ namespace BookOfKnowledge.Controllers
 
         // PUT: api/Book/5
         [HttpPut("{id}")]
-        public Models.Book.Book Put([FromBody] Models.Book.Book book) // Update a book
+        public Models.Book.Book Put(int id, [FromBody] Models.Book.Book book) // Update a book
         {
 
-            return new BookOfKnowledge.DataService.BookDataService().UpdateBook(book);
-
-            //var updateBook = GetBook(book.Id);
-            //if (updateBook != null)
-            //{
-            //    Console.WriteLine("Add New Title: ");
-            //    book.Title = Console.ReadLine();
-            //    Console.WriteLine("Add New Description");
-            //    book.Description = Console.ReadLine();
-
-            //    return new BookOfKnowledge.DataService.BookDataService().UpdateBook(book);
-            //}
-            //else
-            //{
-            //    throw new System.InvalidOperationException("Book was not Found");
-            //}
+            return new BookOfKnowledge.DataService.BookDataService().UpdateBook(id, book);
         }
 
         // DELETE: api/ApiWithActions/5

@@ -35,9 +35,9 @@ namespace BookOfKnowledge.DataService
         {
             return _bookService.CreateBook(book);
         }
-        public Models.Book.Book UpdateBook(Models.Book.Book book)
+        public Models.Book.Book UpdateBook(int id, Models.Book.Book book)
         {
-            return _bookService.UpdateBook(book);
+            return _bookService.UpdateBook(id, book);
         }
     }
 }

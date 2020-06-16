@@ -35,9 +35,9 @@ namespace BookOfKnowledge.Service.Book
         {
             return _bookRepository.CreateBook(book);
         }
-        public Models.Book.Book UpdateBook(Models.Book.Book book)
+        public Models.Book.Book UpdateBook(int id, Models.Book.Book book)
         {
-            return _bookRepository.UpdateBook(book);
+            return _bookRepository.UpdateBook(id, book);
         }
     }
 }

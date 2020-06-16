@@ -71,23 +71,24 @@ namespace BookOfKnowledge.DataAccess.Repository
             //return newBookList.LastOrDefault();
         }
 
-        public Models.Book.Book UpdateBook(Models.Book.Book book)
+        public Models.Book.Book UpdateBook(int id, Models.Book.Book book)
         {        
             string sqlStoredProcedure = @"BookOfKnowledge.dbo.Book_Update";
-
-            var updateBook = FindBookById(book.Id);
-            if (updateBook != null)
+           
+            if (FindBookById(id) != null)
             {               
                 using (var _connection = new SqlConnection(_labsysConnectionString))
                 {
                     _connection.Query<Models.Book.Book>(sqlStoredProcedure,
-                        new { Title = book.Title, Description = book.Description }, commandType: CommandType.StoredProcedure);
+                        new {Id = book.Id, Title = book.Title, Description = book.Description }, commandType: CommandType.StoredProcedure);
+                    
+                    return ListBooks().Find(x => x.Id == id);
                 }
-                return ListBooks().Find(x => x.Id == book.Id);             
+                          
             }
             else
             {
-                throw new InvalidExpressionException("No Book with Id = "+ book.Id);
+                throw new InvalidExpressionException("No Book with Id = "+ book.Id+" was Found");
             }
         }
     }
