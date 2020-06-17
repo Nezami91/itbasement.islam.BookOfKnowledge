@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BookOfKnowledge.Service.Book
 {
@@ -31,7 +33,7 @@ namespace BookOfKnowledge.Service.Book
             return _bookRepository.DeleteBook(id);
         }
 
-        public Models.Book.Book CreateBook(Models.Book.Book book)
+        public ActionResult<Models.Book.Book> CreateBook(Models.Book.Book book)
         {
             return _bookRepository.CreateBook(book);
         }

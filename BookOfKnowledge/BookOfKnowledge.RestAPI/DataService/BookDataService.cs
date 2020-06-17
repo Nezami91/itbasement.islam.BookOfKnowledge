@@ -2,8 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BookOfKnowledge.DataService
 {
@@ -31,7 +33,7 @@ namespace BookOfKnowledge.DataService
             return _bookService.DeleteBook(id);           
         }
 
-        public Models.Book.Book CreateBook(Models.Book.Book book)
+        public ActionResult<Models.Book.Book> CreateBook(Models.Book.Book book)
         {
             return _bookService.CreateBook(book);
         }

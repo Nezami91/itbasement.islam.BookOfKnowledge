@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -27,7 +28,7 @@ namespace BookOfKnowledge.Controllers
 
         // POST: api/Book
         [HttpPost]
-        public Models.Book.Book Post([FromBody] Models.Book.Book book) // create a book
+        public ActionResult<Models.Book.Book> Post([FromBody] Models.Book.Book book) // create a book
         {         
             return new BookOfKnowledge.DataService.BookDataService().CreateBook(book);  
         }

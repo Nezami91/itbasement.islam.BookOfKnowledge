@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.IdentityModel.Protocols.WSTrust;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Dapper;
 using DapperExtensions;
+using Microsoft.AspNetCore.Mvc;
+
 
 namespace BookOfKnowledge.DataAccess.Repository
 {
@@ -44,18 +49,23 @@ namespace BookOfKnowledge.DataAccess.Repository
             }                              
         }    
 
-        public Models.Book.Book CreateBook(Models.Book.Book book)
+        public ActionResult<Models.Book.Book> CreateBook(Models.Book.Book book)
         {          
             string sqlStoredProcedure = @"BookOfKnowledge.dbo.Book_Create";
 
             using (var _connection = new SqlConnection(_labsysConnectionString))
             {              
                     _connection.Query<Models.Book.Book>(sqlStoredProcedure, 
-                        new { Title = book.Title, Description = book.Description}, commandType: CommandType.StoredProcedure);            
+                        new { Title = book.Title, Description = book.Description}, commandType: CommandType.StoredProcedure);
+
+                //var createdBook = ListBooks().Find(x => x.Id == book.Id);
+                
+                var message = new HttpResponseMessage(HttpStatusCode.OK);
+                
+                  
             }
 
-            return ListBooks().Find(x => x.Id == book.Id);                
-            //return newBookList.LastOrDefault();
+            return ListBooks().Find(x => x.Id == book.Id);
         }
 
         public Models.Book.Book UpdateBook(int id, Models.Book.Book book)
