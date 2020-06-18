@@ -12,6 +12,7 @@ namespace BookOfKnowledge.Controllers
     [ApiController]
     public class BookController : ControllerBase
     {
+
         // GET: api/Book
         [HttpGet]
         public List<Models.Book.Book> GetBookList()
@@ -28,7 +29,7 @@ namespace BookOfKnowledge.Controllers
 
         // POST: api/Book
         [HttpPost]
-        public ActionResult<Models.Book.Book> Post([FromBody] Models.Book.Book book) // create a book
+        public Models.Book.Book Post([FromBody] Models.Book.Book book) // create a book
         {         
             return new BookOfKnowledge.DataService.BookDataService().CreateBook(book);  
         }

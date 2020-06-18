@@ -469,7 +469,10 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\BookRepository.cs" />
+    <Compile Include="Repository\BookRepositoryMongoDB.cs" />
     <Compile Include="Repository\ChapterRepository.cs" />
+    <Compile Include="Repository\IBookRepository.cs" />
+    <Compile Include="Repository\IBookRepositoryMongoDB.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

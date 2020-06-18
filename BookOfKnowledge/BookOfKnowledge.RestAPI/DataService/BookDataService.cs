@@ -5,11 +5,12 @@ using System.Linq;
 using System.Net.Http;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualStudio.Web.CodeGeneration.Contracts.ProjectModel;
+using BookOfKnowledge.RestAPI.DataService;
 
 namespace BookOfKnowledge.DataService
 {
-    public class BookDataService
+    public class BookDataService : IBookDataService
     {
         private readonly BookOfKnowledge.Service.Book.BookService _bookService ;
 
@@ -18,6 +19,11 @@ namespace BookOfKnowledge.DataService
             _bookService = new Service.Book.BookService();
         }
 
+        //public BookDataService(BookOfKnowledge.Service.Book.BookService bookService)
+        //{
+        //    _bookService = new Service.Book.BookService();
+        //}
+      
         public List<Models.Book.Book> ListBooks()
         {
             return _bookService.ListBooks();     
@@ -33,7 +39,7 @@ namespace BookOfKnowledge.DataService
             return _bookService.DeleteBook(id);           
         }
 
-        public ActionResult<Models.Book.Book> CreateBook(Models.Book.Book book)
+        public Models.Book.Book CreateBook(Models.Book.Book book)
         {
             return _bookService.CreateBook(book);
         }

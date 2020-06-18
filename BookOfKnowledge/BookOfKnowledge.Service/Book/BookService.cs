@@ -4,36 +4,33 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+using System.Data.SqlClient;
+
 
 namespace BookOfKnowledge.Service.Book
 {
-    public class BookService
+    public class BookService : IBookService
     {
-        private readonly BookOfKnowledge.DataAccess.Repository.BookRepository _bookRepository;
-
-
+       
+        private readonly BookOfKnowledge.DataAccess.Repository.IBookRepositoryMongoDB _bookRepository;
         public BookService()
         {
-            _bookRepository = new BookOfKnowledge.DataAccess.Repository.BookRepository();
+            _bookRepository = new BookOfKnowledge.DataAccess.Repository.BookRepositoryMongoDB();
         }
-
         public List<Models.Book.Book> ListBooks()
         {
             return _bookRepository.ListBooks();
         }
-
         public Models.Book.Book FindBookById(int bookReferenceId)
         {
             return _bookRepository.FindBookById(bookReferenceId);
         }
-
         public Models.Book.Book DeleteBook( int id)
         {
             return _bookRepository.DeleteBook(id);
         }
 
-        public ActionResult<Models.Book.Book> CreateBook(Models.Book.Book book)
+        public Models.Book.Book CreateBook(Models.Book.Book book)
         {
             return _bookRepository.CreateBook(book);
         }

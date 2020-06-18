@@ -46,6 +46,12 @@ namespace BookOfKnowledge
             {
                 endpoints.MapControllers();
             });
+
+            //Dependy injection
+
+
+
+
         }
     }
 }
