@@ -45,8 +45,9 @@ namespace Datatransfer.UI.WPF.View
 
         }
         private void Button_Create_Update(object sender, RoutedEventArgs e)
-        {        
-
+        {
+            Datatransfer.UI.WPF.View.CreateOrUpdate createOrUpdate = new CreateOrUpdate();
+            createOrUpdate.Show();
         }
 
         private void Button_Delete(object sender, RoutedEventArgs e)

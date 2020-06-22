@@ -10,11 +10,11 @@
         <DataGrid HorizontalAlignment="Left" Height="388" Margin="10,21,0,0" VerticalAlignment="Top" Width="782"/>
 
     </Grid>-->
-    <Grid Background="Aqua">
-        <Button x:Name="BtGetList" Content="Get List Of Books" HorizontalAlignment="Left" Margin="635,53,0,0" VerticalAlignment="Top" Width="119" Height="41" Click="Button_GetList" RenderTransformOrigin="0.815,0.707"/>
+    <Grid Background="White">
+        <Button x:Name="BtGetList" Content="Get List of Books" HorizontalAlignment="Left" Margin="635,53,0,0" VerticalAlignment="Top" Width="119" Height="41" Click="Button_GetList" RenderTransformOrigin="0.815,0.707"/>
         <Button x:Name="BtCreate_Update" Content="Create/Update" HorizontalAlignment="Left" Margin="635,132,0,0" VerticalAlignment="Top" Width="119" Height="41" Click="Button_Create_Update" RenderTransformOrigin="2.143,0.61"/>
-        <Button x:Name="BtDelete" Content="Delete (by Id Row)" HorizontalAlignment="Left" Margin="635,213,0,0" VerticalAlignment="Top" Width="119" Height="41" Click="Button_Delete"/>
-        <!--<ListBox x:Name ="ListBox1" HorizontalAlignment="Left" Height="329" Margin="27,38,0,0" VerticalAlignment="Top" Width="406" SelectionChanged="ListBox_SelectionChanged" IsSynchronizedWithCurrentItem="False"/>-->
+        <Button x:Name="BtDelete" Content="Delete" HorizontalAlignment="Left" Margin="635,213,0,0" VerticalAlignment="Top" Width="119" Height="41" Click="Button_Delete"/>
+       
         <Label Content="List Of All Books" HorizontalAlignment="Left" Margin="233,12,0,0" VerticalAlignment="Top" Width="117" RenderTransformOrigin="1.026,0.731"/>
         <ListView Margin="10,43,210,10" Name="ListBookView" SelectionChanged="ListBookView_SelectionChanged">
             <ListView.View>

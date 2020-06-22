@@ -29,3 +29,5 @@ C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledg
 C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\Datatransfer.UI.WPF\obj\Debug\View\BookView.g.cs
 C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\Datatransfer.UI.WPF\obj\Debug\View\BookView.baml
 C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\Datatransfer.UI.WPF\obj\Debug\Datatransfer.UI.WPF.csproj.CopyComplete
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\Datatransfer.UI.WPF\obj\Debug\View\CreateOrUpdate.g.cs
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\Datatransfer.UI.WPF\obj\Debug\View\CreateOrUpdate.baml
