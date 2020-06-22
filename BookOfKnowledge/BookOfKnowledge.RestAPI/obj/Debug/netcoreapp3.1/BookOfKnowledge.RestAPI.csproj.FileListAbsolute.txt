@@ -107,7 +107,12 @@ C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledg
 C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.RestAPI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.RestAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.RestAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.RestAPI\obj\Debug\netcoreapp3.1\BookOfKnowledge.RestAPI.csproj.CoreCompileInputs.cache
-C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.RestAPI\obj\Debug\netcoreapp3.1\BookOfKnowledge.RestAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.RestAPI\bin\Debug\netcoreapp3.1\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.RestAPI\bin\Debug\netcoreapp3.1\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.RestAPI\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.RestAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.RestAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.RestAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.RestAPI\obj\Debug\netcoreapp3.1\BookOfKnowledge.RestAPI.csproj.CoreCompileInputs.cache
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.RestAPI\obj\Debug\netcoreapp3.1\BookOfKnowledge.RestAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.RestAPI\obj\Debug\netcoreapp3.1\BookOfKnowledge.RestAPI.MvcApplicationPartsAssemblyInfo.cache

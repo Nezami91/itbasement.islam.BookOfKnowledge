@@ -1,0 +1,7 @@
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\Instrument.ICP01.datatrasnfer\bin\Debug\Instrument.ICP01.datatrasnfer.exe.config
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\Instrument.ICP01.datatrasnfer\bin\Debug\Instrument.ICP01.datatrasnfer.exe
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\Instrument.ICP01.datatrasnfer\bin\Debug\Instrument.ICP01.datatrasnfer.pdb
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\Instrument.ICP01.datatrasnfer\obj\Debug\Instrument.ICP01.datatrasnfer.csprojAssemblyReference.cache
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\Instrument.ICP01.datatrasnfer\obj\Debug\Instrument.ICP01.datatrasnfer.csproj.CoreCompileInputs.cache
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\Instrument.ICP01.datatrasnfer\obj\Debug\Instrument.ICP01.datatrasnfer.exe
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\Instrument.ICP01.datatrasnfer\obj\Debug\Instrument.ICP01.datatrasnfer.pdb

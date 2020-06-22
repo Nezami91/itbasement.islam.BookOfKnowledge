@@ -4,3 +4,4 @@ C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledg
 C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Models\obj\Debug\BookOfKnowledge.Models.csproj.CoreCompileInputs.cache
 C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Models\obj\Debug\BookOfKnowledge.Models.exe
 C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Models\obj\Debug\BookOfKnowledge.Models.pdb
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.Models\obj\Debug\BookOfKnowledge.Models.csprojAssemblyReference.cache
