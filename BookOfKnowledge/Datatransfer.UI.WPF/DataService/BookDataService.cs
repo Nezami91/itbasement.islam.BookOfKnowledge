@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Datatransfer.UI.WPF.DataService
 {
-   public class BookDataService
+   public  class BookDataService
     {
 
         BookOfKnowledge.Service.Book.BookService bookService = new BookOfKnowledge.Service.Book.BookService();
@@ -35,4 +35,6 @@ namespace Datatransfer.UI.WPF.DataService
 
 
     }
+
+   
 }

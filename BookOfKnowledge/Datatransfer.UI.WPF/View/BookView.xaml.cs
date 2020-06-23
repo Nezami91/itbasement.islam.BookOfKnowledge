@@ -33,8 +33,6 @@ namespace Datatransfer.UI.WPF.View
             listOfBooks = bookService.ListBook();
             ListBookView.Items.Clear();
 
-            
-
             foreach (var item in listOfBooks)
             {
                 ListBookView.Items.Add(item);

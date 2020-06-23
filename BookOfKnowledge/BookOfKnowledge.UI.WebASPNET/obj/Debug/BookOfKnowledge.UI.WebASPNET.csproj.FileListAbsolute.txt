@@ -1,0 +1,2 @@
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.UI.WebASPNET\obj\Debug\BookOfKnowledge.UI.WebASPNET.csproj.CoreCompileInputs.cache
+C:\Users\Nezami\Documents\GitHub\itbasement.islam.BookOfKnowledge\BookOfKnowledge\BookOfKnowledge.UI.WebASPNET\obj\Debug\BookOfKnowledge.UI.WebASPNET.csprojAssemblyReference.cache

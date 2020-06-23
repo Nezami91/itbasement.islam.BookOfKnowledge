@@ -17,6 +17,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Instrument.ICP01.datatransf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datatransfer.UI.WPF", "Datatransfer.UI.WPF\Datatransfer.UI.WPF.csproj", "{FC24E879-4FF2-4B7F-A7C1-69F5A64435F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookOfKnowledge.UI.WindowsForms", "BookOfKnowledge.UI.WindowsForms\BookOfKnowledge.UI.WindowsForms.csproj", "{35F7126E-DBEC-453C-999B-0F4F13BCD430}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookOfKnowledge.UI.WebASPNET", "BookOfKnowledge.UI.WebASPNET\BookOfKnowledge.UI.WebASPNET.csproj", "{6DF42DF0-F56C-4298-A8C7-45577B66F5BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookOfKnowledge.UI.WebASPNETCORE", "BookOfKnowledge.UI.WebASPNETCORE\BookOfKnowledge.UI.WebASPNETCORE.csproj", "{BE6E2342-E615-48CF-B561-535064C2A66E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +57,18 @@ Global
 		{FC24E879-4FF2-4B7F-A7C1-69F5A64435F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC24E879-4FF2-4B7F-A7C1-69F5A64435F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC24E879-4FF2-4B7F-A7C1-69F5A64435F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35F7126E-DBEC-453C-999B-0F4F13BCD430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F7126E-DBEC-453C-999B-0F4F13BCD430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F7126E-DBEC-453C-999B-0F4F13BCD430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F7126E-DBEC-453C-999B-0F4F13BCD430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DF42DF0-F56C-4298-A8C7-45577B66F5BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DF42DF0-F56C-4298-A8C7-45577B66F5BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DF42DF0-F56C-4298-A8C7-45577B66F5BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DF42DF0-F56C-4298-A8C7-45577B66F5BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE6E2342-E615-48CF-B561-535064C2A66E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE6E2342-E615-48CF-B561-535064C2A66E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE6E2342-E615-48CF-B561-535064C2A66E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE6E2342-E615-48CF-B561-535064C2A66E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
