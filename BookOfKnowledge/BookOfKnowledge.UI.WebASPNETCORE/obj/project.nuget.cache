@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "W6TCdnY+JdFTTDonzfjS7ZcrIDRAMw5686FKqetMhLkTPxHjuyt6msGy+SJZ9h7xPHziMJkKUJEN3g5SiQ2Iag==",
+  "dgSpecHash": "4D1YbnHKV6PY+84vLFNsJ1HVnb7Tdg4joNbAC2ebhoXHm0q4CFRWkyo0i63wJfnThZiMrV9poRDOWjHRqX8aFg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.UI.WebASPNETCORE\\BookOfKnowledge.UI.WebASPNETCORE.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Nezami\\.nuget\\packages\\fastmember\\1.5.0\\fastmember.1.5.0.nupkg.sha512",
     "C:\\Users\\Nezami\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Nezami\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\Nezami\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",

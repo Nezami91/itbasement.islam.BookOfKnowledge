@@ -1,22 +1,107 @@
 ﻿
-<div class="jumbotron text-center">
-    <h1>My First Bootstrap Page</h1>
-    <p>Resize this responsive page to see the effect!</p>
-</div>
+@model List<BookOfKnowledge.Models.Book.Book>
+@{
+    Layout = null;
+}
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-4">
-            <h3>Column 1</h3>
-            <p>Lorem ipsum dolor..</p>
-        </div>
-        <div class="col-sm-4">
-            <h3>Column 2</h3>
-            <p>Lorem ipsum dolor..</p>
-        </div>
-        <div class="col-sm-4">
-            <h3>Column 3</h3>
-            <p>Lorem ipsum dolor..</p>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+            $.ajax ({
+                url: "https://localhost:44356/Book/GetList",
+                method: "get",
+                datatype: "json",
+                success: function (bookData) {
+                    var listOfbooks = bookData;
+
+                    $("#bookTable").DataTable({
+                       data: bookData,
+                       columns: [
+                            {"data": "Id"},
+                            {"data": "Title"},
+                            {"data": "Description"},
+                       ]
+                    });
+                }
+            });
+
+
+
+        });
+
+        //$(document).ready(function () {
+        //    $("#bookTable").DataTable({
+        //        "ajax": {
+        //            "url": "/Book/Index",
+        //            "method": "GET",
+        //            "datatype": "json",
+        //        },
+        //        "columns": [
+        //            { "data": "Id", "autoWidth": true },
+        //            { "data": "Title", "autoWidth": true },
+        //            { "data": "Description", "autoWidth": true }
+        //        ]
+        //    });
+
+        //});
+    </script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>List of Books</h2>
+        <p>
+            @Html.ActionLink("Create New", "GetList")
+        </p>
+
+        <table id="bookTable" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @{
+
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(model => item.Chapters)</td>
+                            <td>@Html.DisplayFor(model => item.Description)</td>
+                            <td>@Html.DisplayFor(model => item.Progress)</td>
+         
+                        </tr>
+                    }
+
+
+                }
+            </tbody>
+        </table>
+        <button id="btn_GetAllBooks">Get All Books</button>
+        <button id="btn_CreateOrUpdateBook">Create/Update</button>
+        <button id="btn_DeleteBook">Delete</button>
     </div>
-</div>
+
+</body>
+</html>
+
+
+
+

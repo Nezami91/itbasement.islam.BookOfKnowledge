@@ -18,7 +18,7 @@
         <Label Content="List Of All Books" HorizontalAlignment="Left" Margin="233,12,0,0" VerticalAlignment="Top" Width="117" RenderTransformOrigin="1.026,0.731"/>
         <ListView Margin="10,43,210,10" Name="ListBookView" SelectionChanged="ListBookView_SelectionChanged">
             <ListView.View>
-                <GridView>
+                <GridView  >
                     <GridViewColumn Header="Id" Width="50" DisplayMemberBinding="{Binding Id}" />
                     <GridViewColumn Header="Title" Width="150" DisplayMemberBinding="{Binding Title}" />
                     <GridViewColumn Header="Description" Width="350" DisplayMemberBinding="{Binding Description}" />

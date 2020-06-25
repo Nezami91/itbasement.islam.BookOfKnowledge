@@ -4,6 +4,57 @@
     "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.UI.WebASPNETCORE\\BookOfKnowledge.UI.WebASPNETCORE.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.DataAccess\\BookOfKnowledge.DataAccess.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.DataAccess\\BookOfKnowledge.DataAccess.csproj",
+        "projectName": "BookOfKnowledge.DataAccess",
+        "projectPath": "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.DataAccess\\BookOfKnowledge.DataAccess.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Models\\BookOfKnowledge.Models.csproj": {
+                "projectPath": "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Models\\BookOfKnowledge.Models.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Models\\BookOfKnowledge.Models.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Models\\BookOfKnowledge.Models.csproj",
+        "projectName": "BookOfKnowledge.Models",
+        "projectPath": "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Models\\BookOfKnowledge.Models.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Service\\BookOfKnowledge.Service.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Service\\BookOfKnowledge.Service.csproj",
+        "projectName": "BookOfKnowledge.Service",
+        "projectPath": "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Service\\BookOfKnowledge.Service.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.DataAccess\\BookOfKnowledge.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.DataAccess\\BookOfKnowledge.DataAccess.csproj"
+              },
+              "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Models\\BookOfKnowledge.Models.csproj": {
+                "projectPath": "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Models\\BookOfKnowledge.Models.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.UI.WebASPNETCORE\\BookOfKnowledge.UI.WebASPNETCORE.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,7 +77,14 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Models\\BookOfKnowledge.Models.csproj": {
+                "projectPath": "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Models\\BookOfKnowledge.Models.csproj"
+              },
+              "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Service\\BookOfKnowledge.Service.csproj": {
+                "projectPath": "C:\\Users\\Nezami\\Documents\\GitHub\\itbasement.islam.BookOfKnowledge\\BookOfKnowledge\\BookOfKnowledge.Service\\BookOfKnowledge.Service.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -38,6 +96,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "FastMember": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.3, )"

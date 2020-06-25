@@ -12,7 +12,7 @@ namespace BookOfKnowledge.Service.Book
     public class BookService : IBookService
     {
        
-        private readonly BookOfKnowledge.DataAccess.Repository.IBookRepositoryMongoDB _bookRepository;
+        private readonly BookOfKnowledge.DataAccess.Repository.BookRepositoryMongoDB _bookRepository;
         public BookService()
         {
             _bookRepository = new BookOfKnowledge.DataAccess.Repository.BookRepositoryMongoDB();
